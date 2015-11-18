@@ -1,0 +1,20 @@
+nav {
+  display: block; }
+  nav ul {
+    display: inline; }
+
+h2, .h2 {
+  text-transform: uppercase; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    h2, .h2 {
+      font-size: 27px; } }
+  @media (max-width: 480px) {
+    h2, .h2 {
+      font-size: 25px; } }
+
+a {
+  color: yellow;
+  font-size: 2em;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }

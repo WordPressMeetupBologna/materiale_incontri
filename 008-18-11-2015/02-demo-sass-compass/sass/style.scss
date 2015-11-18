@@ -1,0 +1,30 @@
+@import 'variable';
+@import 'mixins';
+
+nav{
+	display: block;
+	 
+	ul {
+		display: inline;
+	}
+}
+
+h2, .h2{
+  text-transform: uppercase;
+  @include screen-xs-to-sm {
+    font-size: 27px;
+  }
+  @include screen-xs {
+    font-size: 25px;
+  }
+}
+
+a {
+    color: $main_color;
+    font-size: $font_size;
+    text-decoration: none;
+ 
+    &:hover {
+        text-decoration: underline;     
+    }
+}

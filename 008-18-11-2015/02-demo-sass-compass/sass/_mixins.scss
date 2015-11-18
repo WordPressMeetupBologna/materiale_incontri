@@ -1,0 +1,40 @@
+@mixin screen-xs {
+  @media (max-width: #{$screen-xs}) {
+    @content;
+  }
+}
+
+@mixin screen-xs-to-sm {
+  @media (min-width: #{$screen-xs}) and (max-width: #{$screen-sm - 1px}) {
+    @content;
+  }
+}
+
+@mixin screen-sm-to-md {
+  @media (min-width: #{$screen-sm}) and (max-width: #{$screen-md - 1px}) {
+    @content;
+  }
+}
+
+@mixin screen-md-to-lg {
+  @media (min-width: #{$screen-md}) and (max-width: #{$screen-lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin screen-to($width) {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+@mixin screen-from($width) {
+  @media (min-width: #{$width}) {
+    @content;
+  }
+}
